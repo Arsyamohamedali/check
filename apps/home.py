@@ -7,7 +7,7 @@ def app():
     page_bg_img = '''
     <style>
     body {
-        background-image:#121922
+        background-image:'bg.png'
         background-size: cover;
     }
     </style>
