@@ -24,7 +24,7 @@ def app():
         float:right;
         width:300px;
         height:300px;
-        margin-left:auto;
+        # margin-left:auto;
     }
     </style>
     """,
