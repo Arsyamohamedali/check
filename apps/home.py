@@ -4,19 +4,16 @@ import numpy as np
 from data.create_data import create_table
 
 def app():
-    st.markdown(
-    """
+    page_bg_img = '''
     <style>
-    .reportview-container {
-        background:#c4b7a6
-    }
-   .sidebar .sidebar-content {
-        background:#e4d1d1
+    body {
+        background-image: url("https://images.app.goo.gl/usCdWH5UYSp2UpCAA");
+        background-size: cover;
     }
     </style>
-    """,
-    unsafe_allow_html=True
-     )
+    '''
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
         
     st.markdown("""
     <style>
