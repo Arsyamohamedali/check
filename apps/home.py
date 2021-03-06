@@ -7,7 +7,7 @@ def app():
     st.markdown("""
     <style>
     .big-font {
-        font-size:20px !important;
+        font-size:35px !important;
         color:#02346;
     }
     </style>
@@ -25,6 +25,7 @@ def app():
     st.markdown('<p class="bigg-font">Medical Problem??</p>', unsafe_allow_html=True)
 
     st.write("Here's the solution")
+    st.write("This portal cn help you with medical solutions!!")
     #st.markdown("### Sample Data")
     #df = create_table()
     #st.write(df)
