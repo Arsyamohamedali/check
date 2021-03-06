@@ -7,8 +7,8 @@ def app():
     st.title('Home')
 
     st.write("This is HomePage.")
-    st.markdown("### Sample Data")
-    df = create_table()
-    st.write(df)
+    #st.markdown("### Sample Data")
+    #df = create_table()
+    #st.write(df)
 
-    st.write('Navigate to `Data Stats` page to visualize the data')
+    #st.write('Navigate to `Data Stats` page to visualize the data')
