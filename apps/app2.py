@@ -48,8 +48,11 @@ def app():
 		x=x/255.0
 		if(new_model.predict_classes(x)[0][0] == 1):
   			st.write('***Normal***')
+			if st.checkbox('checkbox'):
+				
 		else:
   			st.write('***Pneumonia***')
+			if st.checkbox('checkbox'):
 
 #if __name__ == '__main__':
 	#app()
