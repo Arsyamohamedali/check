@@ -4,8 +4,9 @@ import numpy as np
 from data.create_data import create_table
 from PIL import Image
 
-def app():    
+def app():  
     img=Image.open("radiographer.png")
+    <img style="float:right;src="radiographer.png">
     st.image(img,width=200)
     st.markdown("""
     <style>
