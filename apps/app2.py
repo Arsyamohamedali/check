@@ -50,7 +50,6 @@ def app():
   			st.write('***Normal***')
 			if st.checkbox('checkbox'):
 				st.image(image,channels='BGR')
-	
 		else:
   			st.write('***Pneumonia***')
 			if st.checkbox('checkbox'):
