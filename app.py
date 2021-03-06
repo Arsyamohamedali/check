@@ -1,6 +1,6 @@
 import streamlit as st
 from multiapp import MultiApp
-from apps import home, data_stats # import your app modules here
+from apps import home, app1,app2 # import your app modules here
 
 app = MultiApp()
 
