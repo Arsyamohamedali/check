@@ -4,6 +4,20 @@ import numpy as np
 from data.create_data import create_table
 
 def app():
+     st.markdown(
+    """
+    <style>
+    .reportview-container {
+        background:#895575
+    }
+   .sidebar .sidebar-content {
+        background:#E7D3CC
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+        
     st.markdown("""
     <style>
     .big-font {
