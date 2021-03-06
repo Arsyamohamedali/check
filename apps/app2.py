@@ -49,11 +49,11 @@ def app():
 		if(new_model.predict_classes(x)[0][0] == 1):
 			st.write('***Normal***')
 			if st.button('Show Image'):
-				st.image(image,channels='BGR',width=100)
+				st.image(image,channels='BGR',width=250)
 		else:
 			st.write('***Pneumonia***')
 			if st.button('Show Image'):
-				st.image(image,channels='BGR',width=100)
+				st.image(image,channels='BGR',width=250)
 			
 #if __name__ == '__main__':
 	#app()
