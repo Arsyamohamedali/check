@@ -30,7 +30,7 @@ def app():
 	uploaded_file = st.file_uploader("Choose a image file", type=['png','jpg','jpeg'])
 	if uploaded_file is not None:
 		image = Image.open(uploaded_file)	
-		st.image(image,channels='BGR')
+		#st.image(image,channels='BGR')
 		
 	
 	#images = image.load_img(img, target_size=(150,150))    
@@ -49,10 +49,12 @@ def app():
 		if(new_model.predict_classes(x)[0][0] == 1):
   			st.write('***Normal***')
 			if st.checkbox('checkbox'):
+				st.image(image,channels='BGR')
 				
 		else:
   			st.write('***Pneumonia***')
 			if st.checkbox('checkbox'):
+				st.image(image,channels='BGR')
 
 #if __name__ == '__main__':
 	#app()
