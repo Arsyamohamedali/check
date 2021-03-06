@@ -3,11 +3,41 @@ import pandas as pd
 import numpy as np
 from data.create_data import create_table
 from PIL import Image
+import base64
 
 def app():  
-    img=Image.open("radiographer.png")
-    <img style="float:right;src="radiographer.png">
-    st.image(img,width=200)
+    LOGO_IMAGE = "radiographer.png"
+
+    st.markdown(
+    """
+    <style>
+    .container {
+        display: flex;
+    }
+    .logo-text {
+        font-weight:700 !important;
+        font-size:50px !important;
+        color: #f9a01b !important;
+        padding-top: 75px !important;
+    }
+    .logo-img {
+        float:right;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+    )
+
+    st.markdown(
+    f"""
+    <div class="container">
+        <img class="logo-img" src="data:image/png;base64,{base64.b64encode(open(LOGO_IMAGE, "rb").read()).decode()}">
+        <p class="logo-text">Logo Much ?</p>
+    </div>
+    """,
+    unsafe_allow_html=True
+    )
+
     st.markdown("""
     <style>
     .big-font {
