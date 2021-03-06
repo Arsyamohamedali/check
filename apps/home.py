@@ -17,14 +17,14 @@ def app():
     
     st.markdown("""
     <style>
-    .big-font {
-        font-size:100px !important;
+    .bigg-font {
+        font-size:50px !important;
     }
     </style>
 """, unsafe_allow_html=True)
-    st.markdown('<p class="big-font">Hello World !!</p>', unsafe_allow_html=True)
+    st.markdown('<p class="bigg-font">Medical Problem??</p>', unsafe_allow_html=True)
 
-    st.write("This is HomePage.")
+    st.write("Here's the solution")
     #st.markdown("### Sample Data")
     #df = create_table()
     #st.write(df)
