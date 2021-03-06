@@ -39,10 +39,12 @@ def app():
 		x=x/255.0
 		if(new_model.predict_classes(x)[0][0]==1):
 			st.write('***Haemorrhage***')
-			st.image(image,channels='BGR')
+			if st.checkbox('checkbox')
+				st.image(image,channels='BGR')
 		else:
 			st.write('***Normal***')
-			st.image(image,channels='BGR')
+			if st.checkbox('checkbox')
+				st.image(image,channels='BGR')
 		
   			
 
