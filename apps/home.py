@@ -2,8 +2,11 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from data.create_data import create_table
+from PIL import Image
 
 def app():    
+    img=Image.open("radiographer.png")
+    st.image(img,width=200)
     st.markdown("""
     <style>
     .big-font {
