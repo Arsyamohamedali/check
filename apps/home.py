@@ -8,7 +8,7 @@ def app():
     <style>
     .big-font {
         font-size:50px !important;
-        color:D4D4CE;
+        color:#D4D4CE;
     }
     </style>
 """, unsafe_allow_html=True)
