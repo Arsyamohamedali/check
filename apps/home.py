@@ -22,6 +22,8 @@ def app():
     }
     .logo-img {
         float:right;
+        width:100px;
+        height:100px;
     }
     </style>
     """,
@@ -32,22 +34,12 @@ def app():
     f"""
     <div class="container">
         <img class="logo-img" src="data:image/png;base64,{base64.b64encode(open(LOGO_IMAGE, "rb").read()).decode()}">
-        <p class="logo-text">Logo Much ?</p>
+        <p class="logo-text">MedAI ?</p>
     </div>
     """,
     unsafe_allow_html=True
     )
 
-    st.markdown("""
-    <style>
-    .big-font {
-        font-size:35px !important;
-        color:#02346;
-    }
-    </style>
-""", unsafe_allow_html=True)
-    st.markdown('<p class="big-font">MedAI</p>', unsafe_allow_html=True)
-    #st.title('MedAI')
     
     st.markdown("""
     <style>
