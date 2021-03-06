@@ -22,8 +22,8 @@ def app():
     }
     .logo-img {
         float:right;
-        width:100px;
-        height:100px;
+        width:500px;
+        height:500px;
     }
     </style>
     """,
@@ -34,7 +34,7 @@ def app():
     f"""
     <div class="container">
         <img class="logo-img" src="data:image/png;base64,{base64.b64encode(open(LOGO_IMAGE, "rb").read()).decode()}">
-        <p class="logo-text">MedAI ?</p>
+        <p class="logo-text">MedAI </p>
     </div>
     """,
     unsafe_allow_html=True
