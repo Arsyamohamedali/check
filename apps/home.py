@@ -4,7 +4,7 @@ import numpy as np
 from data.create_data import create_table
 
 def app():
-     st.markdown(
+    st.markdown(
     """
     <style>
     .reportview-container {
@@ -16,7 +16,7 @@ def app():
     </style>
     """,
     unsafe_allow_html=True
-)
+     )
         
     st.markdown("""
     <style>
