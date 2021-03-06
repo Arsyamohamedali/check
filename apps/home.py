@@ -8,10 +8,10 @@ def app():
     """
     <style>
     .reportview-container {
-        background:#D4D4CE
+        background:#eaece5
     }
    .sidebar .sidebar-content {
-        background:#E7D3CC
+        background:#e4d1d1
     }
     </style>
     """,
