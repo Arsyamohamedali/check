@@ -48,12 +48,12 @@ def app():
 		x=x/255.0
 		if(new_model.predict_classes(x)[0][0] == 1):
 			st.write('***Normal***')
-			if st.checkbox('checkbox'):
-				st.image(image,channels='BGR')
+			if st.button('Show Image'):
+				st.image(image,channels='BGR',width=100)
 		else:
 			st.write('***Pneumonia***')
-			if st.checkbox('checkbox'):
-				st.image(image,channels='BGR')
+			if st.button('Show Image'):
+				st.image(image,channels='BGR',width=100)
 			
 #if __name__ == '__main__':
 	#app()
