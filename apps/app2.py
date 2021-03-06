@@ -48,6 +48,8 @@ def app():
 		x=x/255.0
 		if(new_model.predict_classes(x)[0][0] == 1):
 			st.write('***Normal***')
+			if st.checkbox('checkbox'):
+				st.image(image,channels='BGR')
 		else:
   			st.write('***Pneumonia***')
 
