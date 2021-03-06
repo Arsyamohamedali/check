@@ -4,7 +4,15 @@ import numpy as np
 from data.create_data import create_table
 
 def app():
-    st.title('Home')
+    st.title('MedAI')
+    st.markdown("""
+    <style>
+    .big-font {
+        font-size:300px !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
+    st.markdown('<p class="big-font">Hello World !!</p>', unsafe_allow_html=True)
 
     st.write("This is HomePage.")
     #st.markdown("### Sample Data")
