@@ -3,27 +3,18 @@ import pandas as pd
 import numpy as np
 from data.create_data import create_table
 
-def app():
-    page_bg_img = '''
-    <style>
-    body {
-        background-image:'bg.png'
-        background-size: cover;
-    }
-    </style>
-    '''
-    st.markdown(page_bg_img, unsafe_allow_html=True)
-        
-    st.markdown("""
+def app():    
+    st.title("""
     <style>
     .big-font {
-        font-size:50px !important;
+        font-size:20px !important;
         color:#02346;
     }
     </style>
 """, unsafe_allow_html=True)
-    st.markdown('<p class="big-font">MedAI</p>', unsafe_allow_html=True)
+    st.title('<p class="big-font">MedAI</p>', unsafe_allow_html=True)
     #st.title('MedAI')
+    
     st.markdown("""
     <style>
     .big-font {
