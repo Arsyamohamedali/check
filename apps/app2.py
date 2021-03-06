@@ -47,7 +47,7 @@ def app():
 		x=np.reshape(x,(-1,150,150,1))
 		x=x/255.0
 		if(new_model.predict_classes(x)[0][0] == 1):
-  			st.write('***Normal***')
+			st.write('***Normal***')
 			st.image(image,channels='BGR')
 				
 		
