@@ -8,7 +8,7 @@ def app():
     """
     <style>
     .reportview-container {
-        background:#895575
+        background:#D4D4CE
     }
    .sidebar .sidebar-content {
         background:#E7D3CC
