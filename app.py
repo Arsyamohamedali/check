@@ -6,7 +6,7 @@ app = MultiApp()
 
 # Add all your application here
 app.add_app("Home", home.app)
-app.add_app("Haemorrhage Detection", app1.app)
+app.add_app("Haemorrhage Detection", app1.py)
 app.add_app("Pneumonia Detection",app2.py)
 
 # The main app
