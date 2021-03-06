@@ -7,7 +7,8 @@ def app():
     st.markdown("""
     <style>
     .big-font {
-        font-size:100px !important;
+        font-size:50px !important;
+        font-color:'red';
     }
     </style>
 """, unsafe_allow_html=True)
