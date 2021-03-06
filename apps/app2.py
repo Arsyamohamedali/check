@@ -54,5 +54,6 @@ def app():
   			st.write('***Pneumonia***')
 			if st.checkbox('checkbox'):
 				st.image(image,channels='BGR')
+				
 #if __name__ == '__main__':
 	#app()
