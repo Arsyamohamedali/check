@@ -64,17 +64,8 @@ def app():
 
     st.write("***Here's the solution***")
     st.write("This portal can help you with medical solutions!!")
-    htm = """
-    <style>
-    /* 1st button */
-    .element {
-        background-color:#555555;
-    }
 
-   </style>
-    """
-    st.markdown(htm, unsafe_allow_html=True)
-    st.button('← Check it out')
+    st.button('← Check It Out')
     #st.markdown("### Sample Data")
     #df = create_table()
     #st.write(df)
