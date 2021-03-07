@@ -16,9 +16,10 @@ def app():
     }
     .logo-text {
         font-weight:700 !important;
-        font-size:50px !important;
+        font-size:100px !important;
         color: #f9a01b !important;
         padding-top: 75px !important;
+        margin-left:auto;
     }
     .logo-img {
         float:right;
@@ -46,6 +47,7 @@ def app():
     <style>
     .bigg-font {
         font-size:50px !important;
+        font-weight:bold;
     }
     </style>
 """, unsafe_allow_html=True)
