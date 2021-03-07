@@ -3,6 +3,9 @@ from multiapp import MultiApp
 from apps import home, app1,app2 # import your app modules here
 from PIL import Image
 
+hi=Image.open('radiographer.png')
+st.set_page_config(page_title='MedAI',page_icon=hi)
+
 page_bg_img = '''
 <style>
 body {
@@ -13,9 +16,6 @@ background-size: cover;
 '''
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
-
-hi=Image.open('radiographer.png')
-st.set_page_config(page_title='MedAI',page_icon=hi)
 
 app = MultiApp()
 st.sidebar.title('Image Analysis')
