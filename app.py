@@ -6,16 +6,6 @@ from PIL import Image
 hi=Image.open('radiographer.png')
 st.set_page_config(page_title='MedAI',page_icon=hi)
 
-page_bg_img = '''
-<style>
-body {
-background-image: url(https://i.stack.imgur.com/NEuip.jpg");
-background-size: cover;
-}
-</style>
-'''
-
-st.markdown(page_bg_img, unsafe_allow_html=True)
 
 app = MultiApp()
 st.sidebar.title('Image Analysis')
