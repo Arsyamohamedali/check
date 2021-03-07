@@ -1,6 +1,8 @@
 import streamlit as st
 from multiapp import MultiApp
 from apps import home, app1,app2 # import your app modules here
+from PIL import Image
+
 
 hi=Image.open('radiographer.png')
 st.set_page_config(page_title='MedAI',page_icon=hi)
