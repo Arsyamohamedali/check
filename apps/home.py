@@ -64,16 +64,16 @@ def app():
 
     st.write("***Here's the solution***")
     st.write("This portal can help you with medical solutions!!")
-    .button {
-        background-color: #4CAF50; /* Green */
-        border: none;
-        color: black;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
+    htm = """
+    <style>
+    /* 1st button */
+    .element {
+        background-color:#555555;
     }
+
+   </style>
+    """
+    st.markdown(htm, unsafe_allow_html=True)
     st.button('← Check it out')
     #st.markdown("### Sample Data")
     #df = create_table()
