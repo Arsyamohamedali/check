@@ -13,14 +13,15 @@ from PIL import Image,ImageOps
 #PAGE_CONFIG = {"page_title":"Arsya.io","page_icon":"hi","layout":"centered"}
 #st.set_page_config(**PAGE_CONFIG)
 
-#html = '''
-#<style>
-#body {
-#background-image: url("https://img.freepik.com/free-vector/white-elegant-texture-wallpaper_23-2148421854.jpg?size=626&ext=jpg&ga=GA1.2.145878890.1611360000");
-#background-size: cover;
-#}
-#</style>
-#'''
+html = '''
+<style>
+body {
+background-image: url("https://img.freepik.com/free-vector/white-elegant-texture-wallpaper_23-2148421854.jpg?size=626&ext=jpg&ga=GA1.2.145878890.1611360000");
+background-size: cover;
+}
+</style>
+'''
+st.markdown(html, unsafe_allow_html=True)
 
 def app():
 	new_model = keras.models.load_model("haemorrhage_model.h5")
