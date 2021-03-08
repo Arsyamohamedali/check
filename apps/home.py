@@ -14,6 +14,7 @@ def app():
     }
     </style>
     '''
+    st.markdown(html, unsafe_allow_html=True)
 
     LOGO_IMAGE = "radiographer.png"
 
