@@ -24,7 +24,7 @@ from PIL import Image,ImageOps
 #st.markdown(html, unsafe_allow_html=True)
 
 def app():
-	new_model = keras.models.load_model("haemorrhage_model.h5")
+	new_model = keras.models.load_model("haemorrhage_modelnorm.h5")
 	st.title("Haemorrhage Detection")
 	#st.markdown(html, unsafe_allow_html=True)
 
