@@ -71,13 +71,14 @@ def app():
       
     st.button("""
     <style>
-    .bigg-font {
+    .button {
         font-size:50px !important;
         font-weight:bold;
+        color: #f9a01b !important;
     }
     </style>
 """)
-    st.button('<p class="bigg-font">Need Medical Assistance??</p>')
+    st.button('Need Medical Assistance??')
 
     #st.markdown("### Sample Data")
     #df = create_table()
