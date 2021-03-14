@@ -23,7 +23,7 @@ from PIL import Image,ImageOps
 #'''
 
 def app():
-	new_model = keras.models.load_model("modelPN.h5")
+	new_model = keras.models.load_model("modelpncnn.h5")
 	st.title("Pneumonia Detection")
 	#st.markdown(html, unsafe_allow_html=True)
 	
