@@ -67,7 +67,7 @@ def app():
     st.write("***Here's the solution***")
     st.write("This portal can help you with medical solutions!!")
 
-    st.button('← Check It Out')
+    st.button('**← Check It Out**')
     #st.markdown("### Sample Data")
     #df = create_table()
     #st.write(df)
