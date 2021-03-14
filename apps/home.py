@@ -62,7 +62,7 @@ def app():
     }
     </style>
 """, unsafe_allow_html=True)
-    st.markdown('<p class="bigg-font">Medical Problem??</p>', unsafe_allow_html=True)
+    st.markdown('<p class="bigg-font">Need Medical Assistance??</p>', unsafe_allow_html=True)
 
     st.write("***Here's the solution***")
     st.write("This portal can help you with medical solutions!!")
