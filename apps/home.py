@@ -67,7 +67,18 @@ def app():
     st.write("***Here's the solution***")
     st.write("This portal can help you with medical solutions!!")
 
-    st.button('**← Check It Out**')
+    st.button('← Check It Out')
+    
+    
+    st.button("""
+    <style>
+    .bigg-font {
+        font-size:50px !important;
+        font-weight:bold;
+    }
+    </style>
+""", unsafe_allow_html=True)
+    st.button('<p class="bigg-font">Need Medical Assistance??</p>', unsafe_allow_html=True)
     #st.markdown("### Sample Data")
     #df = create_table()
     #st.write(df)
