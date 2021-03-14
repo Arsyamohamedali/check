@@ -61,7 +61,7 @@ def app():
         font-weight:bold;
     }
     </style>
-""")
+""", unsafe_allow_html=True)
     st.markdown('<p class="bigg-font">Need Medical Assistance??</p>', unsafe_allow_html=True)
 
     st.write("***Here's the solution***")
@@ -76,7 +76,7 @@ def app():
         font-weight:bold;
     }
     </style>
-""", unsafe_allow_html=True)
+""")
     st.button('<p class="bigg-font">Need Medical Assistance??</p>')
 
     #st.markdown("### Sample Data")
