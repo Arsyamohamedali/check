@@ -69,16 +69,7 @@ def app():
 
     st.button('← Check It Out')
       
-    st.button("""
-    <style>
-    .button {
-        font-size:50px !important;
-        font-weight:bold;
-        color: #f9a01b !important;
-    }
-    </style>
-""")
-    st.button('Need Medical Assistance??')
+
 
     #st.markdown("### Sample Data")
     #df = create_table()
