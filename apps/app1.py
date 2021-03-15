@@ -26,8 +26,16 @@ from PIL import Image,ImageOps
 def app():
 	new_model = keras.models.load_model("haemorrhage_modelnorm.h5")
 	st.title("Haemorrhage Detection")
-	#st.markdown(html, unsafe_allow_html=True)
-	st.write('Sample Data')
+	page_bg_img = '''
+	<style>
+	body {
+	background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm21-background-tong-058.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=710a6fed5b1923da8d5f95191839ef8a");
+	background-size: cover;
+	}
+	</style>
+	'''
+	
+	st.markdown(page_bg_img, unsafe_allow_html=True)
 
 	uploaded_file_hem = st.file_uploader("Choose a image file", type=['png','jpg','jpeg'])
 	if uploaded_file_hem is not None:
