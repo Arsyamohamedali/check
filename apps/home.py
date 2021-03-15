@@ -6,16 +6,8 @@ from PIL import Image
 import base64
 
 def app(): 
-    st.markdown(
-    '''
-    <style>
-    .html {
-    background-image: url("https://img.freepik.com/free-vector/white-elegant-texture-wallpaper_23-2148421854.jpg?size=626&ext=jpg&ga=GA1.2.145878890.1611360000");
-    background-size: cover;
-    }
-    </style>
-    ''', 
-    unsafe_allow_html=True)
+    st.markdown("### Sample Data")
+
 
     LOGO_IMAGE = "radiographer.png"
 
