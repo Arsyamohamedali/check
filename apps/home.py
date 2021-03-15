@@ -6,7 +6,7 @@ from PIL import Image
 import base64
 
 def app(): 
-    st.write("### Sample Data")
+    
 
 
     LOGO_IMAGE = "radiographer.png"
@@ -61,7 +61,7 @@ def app():
 
     st.button('← Check It Out')
       
-
+    st.write("### Sample Data")
 
     #st.markdown("### Sample Data")
     #df = create_table()
