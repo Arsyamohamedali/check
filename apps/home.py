@@ -61,5 +61,5 @@ def app():
 
     st.button('← Check It Out')
       
-    st.write('Sample Data')
+
 
