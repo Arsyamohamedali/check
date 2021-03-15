@@ -27,7 +27,7 @@ def app():
 	new_model = keras.models.load_model("haemorrhage_modelnorm.h5")
 	st.title("Haemorrhage Detection")
 	#st.markdown(html, unsafe_allow_html=True)
-	st.markdown("### Sample Data")
+	st.write('Sample Data')
 
 	uploaded_file_hem = st.file_uploader("Choose a image file", type=['png','jpg','jpeg'])
 	if uploaded_file_hem is not None:
