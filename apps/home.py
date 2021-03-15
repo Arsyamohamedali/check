@@ -6,7 +6,7 @@ from PIL import Image
 import base64
 
 def app(): 
-    st.markdown("### Sample Data")
+    st.write("### Sample Data")
 
 
     LOGO_IMAGE = "radiographer.png"
