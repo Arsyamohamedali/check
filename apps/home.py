@@ -61,10 +61,5 @@ def app():
 
     st.button('← Check It Out')
       
-    st.write("### Sample Data")
+    st.write('Sample Data')
 
-    #st.markdown("### Sample Data")
-    #df = create_table()
-    #st.write(df)
-
-    #st.write('Navigate to `Data Stats` page to visualize the data')
