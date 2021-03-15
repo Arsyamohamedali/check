@@ -7,21 +7,6 @@ import tensorflow as tf
 import numpy as np 
 from PIL import Image,ImageOps 
 
-#hi=Image.open('068.png')
-#st.set_page_config(page_title='MedAI',page_icon=hi)
-
-#PAGE_CONFIG = {"page_title":"Arsya.io","page_icon":"hi","layout":"centered"}
-#st.set_page_config(**PAGE_CONFIG)
-
-#html = '''
-#<style>
-#body {
-#background-image: url("https://img.freepik.com/free-vector/white-elegant-texture-wallpaper_23-2148421854.jpg?size=626&ext=jpg&ga=GA1.2.145878890.1611360000");
-#background-size: cover;
-#}
-#</style>
-#'''
-#st.markdown(html, unsafe_allow_html=True)
 
 def app():
 	new_model = keras.models.load_model("haemorrhage_modelnorm.h5")
@@ -29,7 +14,7 @@ def app():
 	page_bg_img = '''
 	<style>
 	body {
-	background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm21-background-tong-058.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=710a6fed5b1923da8d5f95191839ef8a");
+	background-image: url("https://img.freepik.com/free-vector/white-elegant-texture-wallpaper_23-2148421854.jpg?size=626&ext=jpg&ga=GA1.2.145878890.1611360000");
 	background-size: cover;
 	}
 	</style>
