@@ -14,7 +14,7 @@ def app():
 	page_bg_img = '''
 	<style>
 	body {
-	background-color:url("https://img.freepik.com/free-photo/faded-red-watercolor-background_23-2147836044.jpg?size=338c&ext=jpg4");
+	background-image:url("https://img.freepik.com/free-photo/faded-red-watercolor-background_23-2147836044.jpg?size=338c&ext=jpg4");
 	background-size: cover;
 	}
 	</style>
