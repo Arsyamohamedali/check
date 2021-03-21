@@ -14,7 +14,7 @@ def app():
 	page_bg_img = '''
 	<style>
 	body {
-	background-color: #DADED4;
+	background-color: "#DADED4";
 	background-size: cover;
 	}
 	</style>
