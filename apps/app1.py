@@ -11,15 +11,14 @@ from PIL import Image,ImageOps
 def app():
 	new_model = keras.models.load_model("haemorrhage_modelnorm.h5")
 	st.title("Haemorrhage Detection")
-	page_bg_img = """
+	st.markdown(f"""
 	<style>
 	body {
 	background-image: url("https://images4.alphacoders.com/105/105358.jpg");
 	background-size: cover;
 	}
 	</style>
-	"""
-	st.markdown(page_bg_img, unsafe_allow_html=True)
+	""", unsafe_allow_html=True)
 
 	uploaded_file_hem = st.file_uploader("Choose a image file", type=['png','jpg','jpeg'])
 	if uploaded_file_hem is not None:
