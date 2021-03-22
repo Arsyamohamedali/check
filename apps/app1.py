@@ -11,7 +11,7 @@ from PIL import Image,ImageOps
 def app():
 	new_model = keras.models.load_model("haemorrhage_modelnorm.h5")
 	st.title("Haemorrhage Detection")
-	st.markdown(f"""
+	st.markdown("""
 	<style>
 	body {
 	background-image: url("https://images4.alphacoders.com/105/105358.jpg");
