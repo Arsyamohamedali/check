@@ -19,7 +19,6 @@ def app():
 	}
 	</style>
 	'''
-	st.text("Arsya")
 	st.markdown(page_bg_img, unsafe_allow_html=True)
 
 	uploaded_file_hem = st.file_uploader("Choose a image file", type=['png','jpg','jpeg'])
