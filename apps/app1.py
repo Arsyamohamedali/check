@@ -21,10 +21,7 @@ def app():
 		<style>
 		.reportview-container {
 		#background: url("https://th.bing.com/th/id/OIP._Jb22j8XhAX_a20L-dX33wHaHa?pid=ImgDet&w=1023&h=1024&rs=1");
-		background: -webkit-linear-gradient(top, #61b1dd 0%,#3e92be 100%);
-		background: -o-linear-gradient(top, #61b1dd 0%,#3e92be 100%);
-		background: -ms-linear-gradient(top, #61b1dd 0%,#3e92be 100%);
-		background: linear-gradient(to bottom, #61b1dd 0%,#3e92be 100%);
+ 		background-image: linear-gradient(to top, #d4d4d4 20%, #c1c7c9 80%);
 		background-size: cover;
 		}
 		</style>
