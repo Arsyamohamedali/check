@@ -20,7 +20,7 @@ def app():
 		"""
 		<style>
 		.reportview-container {
-		background: url("https://media.istockphoto.com/vectors/abstract-marble-gold-pattern-vector-id972151544?k=6&m=972151544&s=170667a&w=0&h=FEP7IpbQfo0Whvc6pDSlp-kq3Tba3fG2Ofc1d9Kr_mo=");
+		background: url("https://th.bing.com/th/id/OIP._Jb22j8XhAX_a20L-dX33wHaHa?pid=ImgDet&w=1023&h=1024&rs=1");
 		background-size: cover;
 		}
 		</style>
