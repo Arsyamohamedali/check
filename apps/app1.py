@@ -20,7 +20,10 @@ def app():
 		"""
 		<style>
 		.reportview-container {
-		background: url("https://th.bing.com/th/id/OIP._Jb22j8XhAX_a20L-dX33wHaHa?pid=ImgDet&w=1023&h=1024&rs=1");
+		#background: url("https://th.bing.com/th/id/OIP._Jb22j8XhAX_a20L-dX33wHaHa?pid=ImgDet&w=1023&h=1024&rs=1");
+		background: #ff0099; 
+ 		background: -webkit-linear-gradient(to right, #ff0099, #493240); 
+		background: linear-gradient(to right, #ff0099, #493240); 
 		background-size: cover;
 		}
 		</style>
