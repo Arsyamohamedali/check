@@ -6,12 +6,16 @@ from tensorflow.keras.preprocessing import image
 import tensorflow as tf
 import numpy as np 
 from PIL import Image,ImageOps 
+import base64
 
 hide_streamlit_style = """
 <style>
 footer {visibility: hidden;}
 </style>
 """
+
+main_bg = "sample.png"
+main_bg_ext = "png"
 
 def app():
 	new_model = keras.models.load_model("haemorrhage_modelnorm.h5")
@@ -21,7 +25,7 @@ def app():
 		<style>
 		.reportview-container {
 		#background: url("https://th.bing.com/th/id/OIP._Jb22j8XhAX_a20L-dX33wHaHa?pid=ImgDet&w=1023&h=1024&rs=1");
- 		background-image: linear-gradient(to top, #d4d4d4 20%, #c1c7c9 80%);
+ 		background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()});
 		background-size: cover;
 		}
 		</style>
