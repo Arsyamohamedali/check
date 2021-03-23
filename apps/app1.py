@@ -7,6 +7,11 @@ import tensorflow as tf
 import numpy as np 
 from PIL import Image,ImageOps 
 
+hide_streamlit_style = """
+<style>
+footer {visibility: hidden;}
+</style>
+"""
 
 def app():
 	new_model = keras.models.load_model("haemorrhage_modelnorm.h5")
@@ -20,7 +25,7 @@ def app():
 		}
 		</style>
 		""", unsafe_allow_html=True) 
-
+	st.markdown(hide_streamlit_style, unsafe_allow_html=True);
 	uploaded_file_hem = st.file_uploader("Choose a image file", type=['png','jpg','jpeg'])
 	if uploaded_file_hem is not None:
 		image = Image.open(uploaded_file_hem)	
