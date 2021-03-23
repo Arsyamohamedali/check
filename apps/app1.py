@@ -20,7 +20,7 @@ def app():
 		"""
 		<style>
 		.reportview-container {
-		background: url("https://www.fg-a.com/wallpapers/white-marble-3-2018.jpg");
+		background: url("https://www.colorhexa.com/dddddd.png");
 		background-size: cover;
 		}
 		</style>
