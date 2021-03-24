@@ -23,9 +23,6 @@ def app():
  	background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()});
 	background-size: cover;
 	}}
-	.sidebar.sidebar-content{{
-	background-color:"#ffffff";
-	}}
 	</style>
 	""", unsafe_allow_html=True) 
     st.markdown(hide_streamlit_style, unsafe_allow_html=True);
