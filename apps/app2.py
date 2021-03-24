@@ -6,25 +6,26 @@ from tensorflow.keras.preprocessing import image
 import tensorflow as tf
 import numpy as np 
 from PIL import Image,ImageOps 
+import base64
 
-#hi=Image.open('068.png')
-#st.set_page_config(page_title='MedAI',page_icon=hi)
-
-#PAGE_CONFIG = {"page_title":"Arsya.io","page_icon":"hi","layout":"centered"}
-#st.set_page_config(**PAGE_CONFIG)
-
-#html = '''
-#<style>
-#body {
-#background-image: url("https://img.freepik.com/free-vector/white-elegant-texture-wallpaper_23-2148421854.jpg?size=626&ext=jpg&ga=GA1.2.145878890.1611360000");
-#background-size: cover;
-#}
-#</style>
-#'''
+main_bg=
+main_bg_ext=
 
 def app():
 	new_model = keras.models.load_model("modelpncnn.h5")
 	st.title("Pneumonia Detection")
+	st.markdown(
+		f"""
+		<style>
+		.reportview-container {{
+		#background: url("https://th.bing.com/th/id/OIP._Jb22j8XhAX_a20L-dX33wHaHa?pid=ImgDet&w=1023&h=1024&rs=1");
+ 		background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()});
+		background-size: cover;
+		}}
+		</style>
+		""", unsafe_allow_html=True) 
+	st.markdown(hide_streamlit_style, unsafe_allow_html=True);
+	
 	#st.markdown(html, unsafe_allow_html=True)
 	
 	uploaded_file = st.file_uploader("Choose a image file", type=['png','jpg','jpeg'])
