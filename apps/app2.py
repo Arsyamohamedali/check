@@ -8,8 +8,14 @@ import numpy as np
 from PIL import Image,ImageOps 
 import base64
 
-main_bg=
-main_bg_ext=
+hide_streamlit_style = """
+<style>
+footer {visibility: hidden;}
+</style>
+"""
+
+main_bg = "sample1.png"
+main_bg_ext = "png"
 
 def app():
 	new_model = keras.models.load_model("modelpncnn.h5")
