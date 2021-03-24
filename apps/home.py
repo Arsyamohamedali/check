@@ -16,15 +16,15 @@ main_bg_ext = "png"
 
 def app(): 
     st.markdown(
-		f"""
-		<style>
-		.reportview-container {{
+	f"""
+	<style>
+	.reportview-container {{
 		#background: url("https://th.bing.com/th/id/OIP._Jb22j8XhAX_a20L-dX33wHaHa?pid=ImgDet&w=1023&h=1024&rs=1");
- 		background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()});
-		background-size: cover;
-		}}
-		</style>
-		""", unsafe_allow_html=True) 
+ 	background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()});
+	background-size: cover;
+	}}
+	</style>
+	""", unsafe_allow_html=True) 
 	st.markdown(hide_streamlit_style, unsafe_allow_html=True);
     
 
