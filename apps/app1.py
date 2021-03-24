@@ -8,6 +8,9 @@ import numpy as np
 from PIL import Image,ImageOps 
 import base64
 
+hi=Image.open('radiographer.png')
+st.set_page_config(page_title='MedAI',page_icon=hi)
+
 hide_streamlit_style = """
 <style>
 footer {visibility: hidden;}
