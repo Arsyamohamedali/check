@@ -5,6 +5,15 @@ from data.create_data import create_table
 from PIL import Image
 import base64
 
+hide_streamlit_style = """
+<style>
+footer {visibility: hidden;}
+</style>
+"""
+
+main_bg = "sample1.png"
+main_bg_ext = "png"
+
 def app(): 
     
 
