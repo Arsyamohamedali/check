@@ -55,11 +55,11 @@ def app():
 		x=x/255.0
 		if(new_model.predict_classes(x)[0][0] == 1):
 			st.write('***Normal***')
-			if st.button('Show Image'):
+			if st.beta_expander('Show Image'):
 				st.image(image,channels='BGR',width=300)
 		else:
 			st.write('***Pneumonia***')
-			if st.button('Show Image'):
+			if st.beta_expander('Show Image'):
 				st.image(image,channels='BGR',width=300)
 			
 #if __name__ == '__main__':
