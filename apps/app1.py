@@ -44,11 +44,11 @@ def app():
 		x=x/255.0
 		if(new_model.predict_classes(x)[0][0]==1):
 			st.write('***Haemorrhage***')
-			if st.beta_expander('Show Image'):
+			with st.beta_expander('Show Image'):
 				st.image(image,channels='BGR',width=300)
 		else:
 			st.write('***Normal***')
-			if st.beta_expander('Show Image'):
+			with st.beta_expander('Show Image'):
 				st.image(image,channels='BGR',width=300)
 		
   			
