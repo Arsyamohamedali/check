@@ -15,7 +15,7 @@ footer {visibility: hidden;}
 </style>
 """
 
-main_bg = "sample.png"
+main_bg = "sample1.png"
 main_bg_ext = "png"
 
 def app():
